@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express();
-const {acceptJson, addRoutes} = require('./utils/utils')
+const {addRoutes} = require('./utils/utils')
 require('dotenv').config();
 app.listen(process.env.PORT, () => {
     addRoutes(app);
