@@ -2,6 +2,11 @@ const bodyParser = require('body-parser')
 const fs = require('fs');
 const path = require('path');
 
+const acceptJson = (app) => {
+    app.use(bodyParser.json()) // for parsing application/json
+    app.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
+}
+
 const addRoutes = (app) => {
     const basePath = path.join(__dirname, `../api/${process.env.API_VERSION}/`);
     fs.readdir(basePath, (err, files) => {
@@ -26,5 +31,6 @@ const addRoutes = (app) => {
 }
 
 module.exports = {
-    addRoutes
+    addRoutes,
+    acceptJson
 }
