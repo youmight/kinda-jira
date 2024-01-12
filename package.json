@@ -1,0 +1,26 @@
+{
+  "name": "kinda-jira",
+  "version": "1.0.0",
+  "description": "A backend API to provide a Jira like collaborative task manager",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youmight/kinda-jira.git"
+  },
+  "author": "Srajan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youmight/kinda-jira/issues"
+  },
+  "homepage": "https://github.com/youmight/kinda-jira#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
