@@ -23,6 +23,7 @@ fs
         return (file === 'model.js');
       })
       .forEach(file => {
+        console.log(path.join(__dirname + `/../api/${process.env.API_VERSION}/` + folder + '/', file));
         const model = require(path.join(__dirname + `/../api/${process.env.API_VERSION}/` + folder + '/', file))(sequelize, Sequelize.DataTypes);
         db[model.name] = model;
       })

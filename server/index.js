@@ -2,9 +2,7 @@ const express = require('express')
 const app = express();
 const { acceptJson, addRoutes } = require('./utils/utils')
 require('dotenv').config();
-const db = require('./models/index')
-
-
+const db = require('./utils/sequelizeLoader')
 
 db.sequelize
     .sync()
