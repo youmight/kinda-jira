@@ -1,8 +1,6 @@
 const nodemailer = require('nodemailer')
 require('dotenv').config()
 
-console.log(process.env.GMAIL_SENDER_MAIL)
-
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     host: "smtp.gmail.net",
