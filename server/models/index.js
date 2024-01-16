@@ -17,8 +17,8 @@ if (config.use_env_variable) {
 }
 
 fs
-  .readdirSync(__dirname + `/../api/${process.env.API_VERSION}`).forEach(function(folder){
-      fs.readdirSync(__dirname + `/../api/${process.env.API_VERSION}/` + folder)
+  .readdirSync(__dirname + `/../api/${process.env.API_VERSION}`).forEach(function (folder) {
+    fs.readdirSync(__dirname + `/../api/${process.env.API_VERSION}/` + folder)
       .filter(file => {
         return (file === 'model.js');
       })
