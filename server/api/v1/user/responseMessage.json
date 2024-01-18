@@ -1,0 +1,5 @@
+{
+    "OTP_SENT": "An OTP has been sent to",
+    "NON_VERIFIED_USER_CREATED": "Your account has been created, please check the registered mail for the OTP verification",
+    "SOMETHING_WENT_WRONG": "Something went wrong"
+}

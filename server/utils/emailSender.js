@@ -17,7 +17,7 @@ const sendMail = async (receiver, subject, text, html) => {
     try {
         const info = await transporter.sendMail({
             from: process.env.GMAIL_SENDER_MAIL,
-            to,
+            to: receiver,
             subject,
             text,
             html,
@@ -27,3 +27,5 @@ const sendMail = async (receiver, subject, text, html) => {
         console.log(err);
     }
 }
+
+module.exports = sendMail;
