@@ -1,0 +1,7 @@
+{
+    "OTP_SENT": "An OTP has been sent to",
+    "USER_CREATED": "Account created successfully, enter the OTP sent to registered mail id to continue",
+    "SOMETHING_WENT_WRONG": "Something went wrong",
+    "LOGIN_SUCCESSFUL": "Successfully logged in",
+    "INVALID_OTP": "Entered OTP is invalid"
+}

@@ -18,6 +18,14 @@ module.exports = (sequelize, DataTypes) => {
                     msg: "Must be a valid email address",
                 }
             }
+        },
+        otp: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        isVerified: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false
         }
     }
     );
