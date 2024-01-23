@@ -13,19 +13,16 @@ const transporter = nodemailer.createTransport({
     },
 });
 
-const sendMail = async (receiver, subject, text, html) => {
-    try {
-        const info = await transporter.sendMail({
-            from: process.env.GMAIL_SENDER_MAIL,
-            to: receiver,
-            subject,
-            text,
-            html,
-        });
-        console.log("Message sent: %s", info.messageId);
-    } catch (err) {
-        console.log(err);
-    }
+const sendEmail = async (receiver, subject, text, html) => {
+    const info = await transporter.sendMail({
+        from: process.env.GMAIL_SENDER_MAIL,
+        to: receiver,
+        subject,
+        text,
+        html,
+    });
+    console.log("Message sent: %s", info.messageId);
+    return true;
 }
 
-module.exports = sendMail;
+module.exports = sendEmail;

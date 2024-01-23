@@ -20,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
             }
         },
         otp: {
-            type: DataTypes.STRING(6),
+            type: DataTypes.STRING,
             allowNull: false,
         },
         isVerified: {
